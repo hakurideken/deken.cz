@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clipy – HakuriDeken</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">deken<span>.cz</span></a>
+    <div class="nav-links">
+      <a href="index.html">Domů</a>
+      <a href="stream.html">Stream</a>
+      <a href="clips.html" class="active">Clipy</a>
+      <a href="support.html">Podpora</a>
+      <a href="faq.html">FAQ & Kontakt</a>
+    </div>
+    <button class="nav-burger" aria-label="Menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-mobile" id="navMobile">
+    <a href="index.html" onclick="toggleMenu()">Domů</a>
+    <a href="stream.html" onclick="toggleMenu()">Stream</a>
+    <a href="clips.html" onclick="toggleMenu()">Clipy</a>
+    <a href="support.html" onclick="toggleMenu()">Podpora</a>
+    <a href="faq.html" onclick="toggleMenu()">FAQ & Kontakt</a>
+  </div>
+
+  <header class="page-header">
+    <div class="container">
+      <h1>Nejlepší clipy</h1>
+      <p>Vtipné momenty, epic plays a hodně blbostí</p>
+    </div>
+  </header>
+
+  <section class="section section-dark">
+    <div class="container">
+      <div class="clips-grid">
+        <div class="clip-card">
+          <div class="clip-thumb">
+            <iframe src="https://kick.com/hakurideken/clips/CLIP_ID_1" allowfullscreen title="Clip 1"></iframe>
+          </div>
+          <p class="clip-title">Název clipu 1</p>
+        </div>
+        <div class="clip-card">
+          <div class="clip-thumb">
+            <iframe src="https://kick.com/hakurideken/clips/CLIP_ID_2" allowfullscreen title="Clip 2"></iframe>
+          </div>
+          <p class="clip-title">Název clipu 2</p>
+        </div>
+        <div class="clip-card">
+          <div class="clip-thumb">
+            <iframe src="https://kick.com/hakurideken/clips/CLIP_ID_3" allowfullscreen title="Clip 3"></iframe>
+          </div>
+          <p class="clip-title">Název clipu 3</p>
+        </div>
+      </div>
+      <div class="clips-more">
+        <a href="https://kick.com/hakurideken/clips" target="_blank" rel="noopener" class="btn btn-outline">Všechny clipy na Kicku</a>
+        <a href="https://youtube.com/@hakurideken" target="_blank" rel="noopener" class="btn btn-outline">Highlights na YouTube</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">deken<span>.cz</span></span>
+      <div class="footer-links">
+        <a href="https://kick.com/hakurideken" target="_blank" rel="noopener">Kick</a>
+        <a href="https://youtube.com/@hakurideken" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://discord.gg/hakurideken" target="_blank" rel="noopener">Discord</a>
+        <a href="https://tiktok.com/@hakurideken" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://instagram.com/hakurideken" target="_blank" rel="noopener">Instagram</a>
+      </div>
+      <p class="footer-copy">© 2026 HakuriDeken. Všechna práva vyhrazena.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

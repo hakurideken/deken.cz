@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ & Kontakt – HakuriDeken</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">deken<span>.cz</span></a>
+    <div class="nav-links">
+      <a href="index.html">Domů</a>
+      <a href="stream.html">Stream</a>
+      <a href="clips.html">Clipy</a>
+      <a href="support.html">Podpora</a>
+      <a href="faq.html" class="active">FAQ & Kontakt</a>
+    </div>
+    <button class="nav-burger" aria-label="Menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-mobile" id="navMobile">
+    <a href="index.html" onclick="toggleMenu()">Domů</a>
+    <a href="stream.html" onclick="toggleMenu()">Stream</a>
+    <a href="clips.html" onclick="toggleMenu()">Clipy</a>
+    <a href="support.html" onclick="toggleMenu()">Podpora</a>
+    <a href="faq.html" onclick="toggleMenu()">FAQ & Kontakt</a>
+  </div>
+
+  <header class="page-header">
+    <div class="container">
+      <h1>FAQ & Kontakt</h1>
+      <p>Nejčastější otázky a jak se mi ozvat</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Časté otázky</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Kdy streamuješ?</summary>
+          <p>Pravidelně Po, St, Pá, So a Ne vždy od 18:00. Časy jsou orientační — sleduj oznámení v <a href="https://discord.gg/hakurideken" target="_blank" rel="noopener">Discordu</a>.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Co hraješ?</summary>
+          <p>Doplň odpověď — jaké hry hraješ nejčastěji?</p>
+        </details>
+        <details class="faq-item">
+          <summary>Jak mohu donovat?</summary>
+          <p>Přes Kick Sub, Streamlabs donaci nebo YouTube Membership. Všechny možnosti najdeš na stránce <a href="support.html">Podpora</a>.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Dáš mi Sub/Follow back?</summary>
+          <p>Follow back dávám každému — sleduj mě a já tě sleduju zpět! Sub back bohužel nemůžu slíbit, ale vždy si vážím každé podpory.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Mohu se ti ozvat ohledně spolupráce?</summary>
+          <p>Jasně! Napiš mi na email níže nebo přes DM na Instagramu.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Jaký máš setup?</summary>
+          <p>Celý setup najdeš v sekci O mně na <a href="index.html#about">hlavní stránce</a>.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <h2 class="section-title">Kontakt</h2>
+      <p class="section-desc">Pro spolupráce, sponzoring nebo obecné dotazy mě kontaktuj na:</p>
+      <div class="contact-box">
+        <a href="mailto:kontakt@deken.cz" class="contact-email">kontakt@deken.cz</a>
+        <p class="contact-note">Odpovídám obvykle do 48 hodin. Pro rychlejší odpověď piš přes DM na Instagramu.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">deken<span>.cz</span></span>
+      <div class="footer-links">
+        <a href="https://kick.com/hakurideken" target="_blank" rel="noopener">Kick</a>
+        <a href="https://youtube.com/@hakurideken" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://discord.gg/hakurideken" target="_blank" rel="noopener">Discord</a>
+        <a href="https://tiktok.com/@hakurideken" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://instagram.com/hakurideken" target="_blank" rel="noopener">Instagram</a>
+      </div>
+      <p class="footer-copy">© 2026 HakuriDeken. Všechna práva vyhrazena.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
