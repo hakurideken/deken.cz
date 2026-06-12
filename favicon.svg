@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100" height="100" rx="20" fill="#0e0e10"/>
+
+  <!-- H — left bar -->
+  <rect x="12" y="18" width="7" height="64" rx="3.5" fill="#53fc18" filter="url(#glow)"/>
+  <!-- H — right bar -->
+  <rect x="33" y="18" width="7" height="64" rx="3.5" fill="#53fc18" filter="url(#glow)"/>
+  <!-- H — crossbar -->
+  <rect x="12" y="44" width="28" height="7" rx="3.5" fill="#53fc18" filter="url(#glow)"/>
+
+  <!-- D — left bar -->
+  <rect x="55" y="18" width="7" height="64" rx="3.5" fill="#53fc18" filter="url(#glow)"/>
+  <!-- D — curve -->
+  <path d="M62 18 Q92 18 92 50 Q92 82 62 82" fill="none" stroke="#53fc18" stroke-width="7" stroke-linecap="round" filter="url(#glow)"/>
+</svg>
