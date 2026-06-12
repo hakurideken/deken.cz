@@ -41,6 +41,12 @@ async function loadStats() {
         const el = document.querySelector('.stat:nth-child(1) .stat-num');
         if (el) el.textContent = formatNum(count);
       }
+      const badge = document.getElementById('liveStatus');
+      if (badge) {
+        const isLive = !!data.livestream;
+        badge.className = 'live-badge ' + (isLive ? 'live-online' : 'live-offline');
+        badge.querySelector('.live-text').textContent = isLive ? 'LIVE' : 'OFFLINE';
+      }
     }
   } catch {}
 }
